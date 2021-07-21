@@ -1,0 +1,422 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 0;
+	background-image: url("../images/bluewood.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+	margin-top: 56px;
+	margin-left: 196px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;	
+	font-size: 18px;
+	color: white;
+}
+
+h2 {	
+	margin-top: 30px;
+	margin-left: 196px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;	
+	font-size: 14px;
+	color: white;	
+	
+}
+
+p {	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;	
+	font-size: 24px;
+	color: white;	
+}
+
+b {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;	
+	font-size: 24px;
+	color: white;
+}
+
+
+/*CSS for header starts here*/
+header {
+	position: fixed;
+	width: 100%;
+	height: 140px;
+	margin: 0px auto 0px auto;	
+	background-color: black;
+	z-index: 1;
+}
+
+h1 a:hover, h2 a:hover, #logo a:hover{
+	color: white;
+    text-decoration: none;
+}
+
+#logo {	
+	float: left;
+	margin-top: 20px;
+	margin-left: 46px;
+}
+
+nav {
+	margin-right: 40px;
+}
+
+.topnav a {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#myTopnav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;	
+    font-size: 18px;
+	
+    float: left;
+    width: 100%;
+    text-align: right;
+    margin: -50px auto 0px auto;
+}
+
+#current {
+	color: #a3c6d0;
+}
+
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a3c6d0;
+    text-decoration: none;
+}
+
+#logo01 {
+	width: 101px;
+}
+
+@media screen and (max-width: 1455px) {		
+  .topnav a {
+	margin-left: 15px;
+  }	
+}
+
+@media screen and (max-width: 1385px) {		
+  .topnav a {
+	margin-left: 5px; 
+  }	
+}
+
+@media screen and (max-width: 1315px) { 
+  header {
+	width: 1315px;
+  }	
+  nav {
+	margin-right: 56px;
+  }
+}
+/*CSS for header ends here*/
+
+iframe {
+    float: left;
+    display: block;
+    border-style:none;
+    margin: 215px auto 0px auto;
+}
+
+/*CSS for portfolio icons and concept images start here*/
+.column {
+    float: left; 
+}
+
+#row {
+    width: 50%;
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0 auto;
+}
+
+#row img {
+    width: 465px;
+    height: 465px;
+    transition: transform 0.1s linear;
+    z-index: 0;
+}
+
+#img2, #img4, #img6, #img8, #img10 {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+#img1, #img3, #img5, #img7, #img9{
+    margin-top: 30px;
+    margin-right: 15px
+}
+
+a:hover #img1, a:focus #img1 {
+    transform: scale(1.075);
+} 
+a:hover #img2, a:focus #img2 {
+    transform: scale(1.075); 
+} 
+a:hover #img3, a:focus #img3 { 	
+    transform: scale(1.075); 
+} 
+a:hover #img4, a:focus #img4 { 	
+    transform: scale(1.075); 
+}  
+a:hover #img5, a:focus #img5 { 	
+    transform:scale(1.075); 
+}  
+a:hover #img6, a:focus #img6 { 	
+    transform: scale(1.075); 
+}  
+a:hover #img7, a:focus #img7 { 	
+    transform: scale(1.075); 
+}  
+a:hover #img8, a:focus #img8 { 	
+    transform: scale(1.075); 
+}  
+a:hover #img9, a:focus #img9 { 	
+    transform: scale(1.075); 
+}  
+a:hover #img10, a:focus #img10 { 	
+    transform: scale(1.075); 
+}  
+a:hover img { 	
+    box-shadow: 6px 6px 6px rgba(0,0,0,.3); 
+} 
+a:hover #img01, a:hover #headshot, a:hover #social01, a:hover #social02, a:hover #social03, a:hover #social04, a:hover #resume01 { 	
+    box-shadow: none; 
+} 
+
+#row02 {
+    width: 50%;
+    content: "";
+    clear: both;
+    display: table;
+    margin: 0 auto;
+}
+
+#row02 img {
+    width: 465px;
+    height: 265px;
+    transition: transform 0.1s linear;
+    z-index: 0;
+}
+
+#portfoliopageheading h1{
+    margin-top: 215px;
+    font-size: 36px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.sketchfab-embed-wrapper {
+    margin-top: -140px;
+}
+
+#highlightimage img {
+    margin-top: 30px;
+    width: 960px;
+    height: 540px;
+    transition: transform 0.1s linear;
+    z-index: 0;
+}
+/*CSS for portfolio icons and concept images ends here*/
+
+/*CSS for about page starts here*/
+#headshot {
+    margin-top: 75px;
+    margin-bottom: 150px;
+	margin-right: 15px;
+    z-index: 0;
+}
+
+#content {
+	width: 465px;
+	height: 465px;
+	
+	margin: 75px 0px 0px 15px;
+	float: left;
+	line-height: 31px;
+	/*line-height: 36px;*/
+}
+
+/* Updated CSS for bio starts here */
+#content a:hover {
+	color: #a3c6d0;
+    text-decoration: underline;
+}
+
+#content a:link, .hyperlink a:visited {
+	color: #a3c6d0;
+}
+/* Updated CSS for bio ends here */
+
+.hyperlink {
+	margin-top: 45px;
+	/*margin-top: 55px;*/
+	text-align: center;
+}
+
+.hyperlink p {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.hyperlink a:hover {
+	color: #a3c6d0;
+    text-decoration: underline;
+}
+
+.hyperlink a:link, .hyperlink a:visited {
+	color: #a3c6d0;
+}
+
+#resume h2, #socials h2{
+	margin-top: 46px;
+	margin-left: 0px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#resume {
+	float: left;
+	width: 465px;
+	height: 150px;
+	margin-top: -150px;
+}
+
+#resume img{
+	float: right;
+	margin-top: -30px;
+	width: 50px;
+    height: 50px;
+}
+
+#resume .hyperlink {
+	margin-top: 48px;
+}
+
+#resume p{
+	text-align: center;
+	margin-right: 62px;
+}
+
+#socials{
+	float: right;
+	width: 465px;
+	height: 150px;	
+}
+
+#socials img{
+	float: right;
+	margin-top: 20px;
+	margin-left: 35px;
+	width: 45px;
+    height: 45px;
+}
+
+a:hover #social01, a:focus #social01 {
+    transform: scale(1.075);
+} 
+a:hover #social02, a:focus #social02 {
+    transform: scale(1.075);
+} 
+a:hover #social03, a:focus #social03 {
+    transform: scale(1.075);
+} 
+a:hover #social04, a:focus #social04 {
+    transform: scale(1.075);
+} 
+a:hover #resume01, a:focus #resume01 {
+    transform: scale(1.075);
+} 
+
+.icons { 
+	margin-right: 90px;
+}
+
+#contactimage img {
+	margin-top: 0px;
+    width: 960px;
+    height: 540px;
+}
+/*CSS for about page ends here*/
+
+/*CSS for footer starts here*/
+footer {
+	height: 70px;
+	width: 100%;
+	float: left;
+	margin: 75px auto 0px auto;
+	background-color: black;
+}
+
+small {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	margin-left: 46px;
+	color: white;	
+	font-size: 12px;
+}
+
+.copyright {
+	margin-top: 23px;
+}
+/*CSS for footer ends here*/
+
+
