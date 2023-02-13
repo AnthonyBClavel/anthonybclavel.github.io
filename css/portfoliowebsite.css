@@ -6,6 +6,8 @@
    License: none (public domain)
 */
 
+
+/*-------------------- Resetting CSS STARTS here --------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,397 +28,555 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 0;
-	background-image: url("../images/bluewood.jpg");
+	/* CSS for the background STARTS here */
+	background-image: url("../images/backgrounds/bg_bluewood.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+	background-attachment: fixed;
+	/* CSS for the background ENDS here */
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
+
+blockquote:before, blockquote:after, 
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*-------------------- Resetting CSS ENDS here --------------------*/
 
-h1 {
-	margin-top: 56px;
-	margin-left: 196px;
+
+/* CSS for fonts START here */
+h1, h2, nav, small, button {
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;	
+	font-weight: 400;
+	color: white;
+}
+
+h1, nav, button {
 	font-size: 18px;
-	color: white;
 }
 
-h2 {	
-	margin-top: 30px;
-	margin-left: 196px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;	
+h2 {
 	font-size: 14px;
-	color: white;	
-	
 }
 
-p {	
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;	
-	font-size: 24px;
-	color: white;	
+small {
+	font-size: 12px;
 }
 
-b {
+p, b {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 800;	
+	font-weight: 400;
 	font-size: 24px;
 	color: white;
 }
 
+a:link, a:visited, a:active {
+	color: white;
+	text-decoration: none;
+	transition: color 0.1s ease-in-out;
+}
+/* CSS for fonts END here */
 
-/*CSS for header starts here*/
+
+
+/* CSS for header STARTS here */
 header {
 	position: fixed;
+	display: flex;
+	align-items: center;
+
 	width: 100%;
-	height: 140px;
-	margin: 0px auto 0px auto;	
+	height: 130px;
 	background-color: black;
 	z-index: 1;
 }
 
-h1 a:hover, h2 a:hover, #logo a:hover{
-	color: white;
-    text-decoration: none;
+#website-logo {
+	float: left;
+	flex: none;
+	margin: auto 0 auto 40px;
+	/*background-color: white;*/
 }
 
-#logo {	
+#logo {
+	width: 90px;
+	height: 90px;
+}
+
+#name-and-title {
 	float: left;
-	margin-top: 20px;
-	margin-left: 46px;
+	flex: none;
+	width: auto;
+	height: 30px;
+	margin: auto 0 auto 40px;
+	/*background-color: blue;*/
+}
+
+#name-and-title h2 {
+	margin-top: 30px;
 }
 
 nav {
-	margin-right: 40px;
+	float: right;
+	flex: none;
+	display: flex;
+	align-items: center;
+
+	width: auto;
+	height: 30px;
+	margin: auto 40px auto auto;
+	/*background-color: green;*/
 }
 
-.topnav a {
-	margin-left: 25px;
-	margin-right: 25px;
+.webpage {
+	float: left;
+	flex: none;
+
+	width: auto;
+	height: 30px;
+	margin-left: 40px;
+	/*background-color: pink;*/
 }
 
-#myTopnav {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;	
-    font-size: 18px;
-	
-    float: left;
-    width: 100%;
-    text-align: right;
-    margin: -50px auto 0px auto;
+.webpage a {
+	position: relative;
+	top: 50%;
+	/*background-color: purple;*/
+}
+
+.webpage a:hover {
+	color: #a3c6d0;
 }
 
 #current {
 	color: #a3c6d0;
 }
+/* CSS for header ENDS here */
 
-a:link, a:visited, a:active {
-    color: white;
-    text-decoration: none;
-}
 
-a:hover {
-    color: #a3c6d0;
-    text-decoration: none;
-}
 
-#logo01 {
-	width: 101px;
-}
-
-@media screen and (max-width: 1455px) {		
-  .topnav a {
-	margin-left: 15px;
-  }	
-}
-
-@media screen and (max-width: 1385px) {		
-  .topnav a {
-	margin-left: 5px; 
-  }	
-}
-
-@media screen and (max-width: 1315px) { 
-  header {
-	width: 1315px;
-  }	
-  nav {
-	margin-right: 56px;
-  }
-}
-/*CSS for header ends here*/
-
-iframe {
-    float: left;
-    display: block;
-    border-style:none;
-    margin: 215px auto 0px auto;
-}
-
-/*CSS for portfolio icons and concept images start here*/
-.column {
-    float: left; 
-}
-
-#row {
-    width: 50%;
-    content: "";
-    clear: both;
-    display: table;
-    margin: 0 auto;
-}
-
-#row img {
-    width: 465px;
-    height: 465px;
-    transition: transform 0.1s linear;
-    z-index: 0;
-}
-
-#img2, #img4, #img6, #img8, #img10 {
-    margin-top: 30px;
-    margin-left: 15px;
-}
-#img1, #img3, #img5, #img7, #img9{
-    margin-top: 30px;
-    margin-right: 15px
-}
-
-a:hover #img1, a:focus #img1 {
-    transform: scale(1.075);
-} 
-a:hover #img2, a:focus #img2 {
-    transform: scale(1.075); 
-} 
-a:hover #img3, a:focus #img3 { 	
-    transform: scale(1.075); 
-} 
-a:hover #img4, a:focus #img4 { 	
-    transform: scale(1.075); 
-}  
-a:hover #img5, a:focus #img5 { 	
-    transform:scale(1.075); 
-}  
-a:hover #img6, a:focus #img6 { 	
-    transform: scale(1.075); 
-}  
-a:hover #img7, a:focus #img7 { 	
-    transform: scale(1.075); 
-}  
-a:hover #img8, a:focus #img8 { 	
-    transform: scale(1.075); 
-}  
-a:hover #img9, a:focus #img9 { 	
-    transform: scale(1.075); 
-}  
-a:hover #img10, a:focus #img10 { 	
-    transform: scale(1.075); 
-}  
-a:hover img { 	
-    box-shadow: 6px 6px 6px rgba(0,0,0,.3); 
-} 
-a:hover #img01, a:hover #headshot, a:hover #social01, a:hover #social02, a:hover #social03, a:hover #social04, a:hover #resume01 { 	
-    box-shadow: none; 
-} 
-
-#row02 {
-    width: 50%;
-    content: "";
-    clear: both;
-    display: table;
-    margin: 0 auto;
-}
-
-#row02 img {
-    width: 465px;
-    height: 265px;
-    transition: transform 0.1s linear;
-    z-index: 0;
-}
-
-#portfoliopageheading h1{
-    margin-top: 215px;
-    font-size: 36px;
-    margin-left: 0px;
-    text-align: center;
-}
-
-.sketchfab-embed-wrapper {
-    margin-top: -140px;
-}
-
-#highlightimage img {
-    margin-top: 30px;
-    width: 960px;
-    height: 540px;
-    transition: transform 0.1s linear;
-    z-index: 0;
-}
-/*CSS for portfolio icons and concept images ends here*/
-
-/*CSS for about page starts here*/
-#headshot {
-    margin-top: 75px;
-    margin-bottom: 150px;
-	margin-right: 15px;
-    z-index: 0;
-}
-
-#content {
-	width: 465px;
-	height: 465px;
-	
-	margin: 75px 0px 0px 15px;
+/* CSS for the drop down menu STARTS here */
+.dropdown {
 	float: left;
-	line-height: 31px;
-	/*line-height: 36px;*/
+	flex: none;
+
+	text-align: left;
+	margin-left: 40px;
 }
 
-/* Updated CSS for bio starts here */
-#content a:hover {
-	color: #a3c6d0;
-    text-decoration: underline;
+.dropdown-button {
+	display: flex;
+	align-items: center;
+
+	padding: 0px 0px;
+	border: none;
+	background-color: black;
+
+	transition: 0.1s ease-in-out;
+	transition-property: background-color, color;
 }
 
-#content a:link, .hyperlink a:visited {
-	color: #a3c6d0;
-}
-/* Updated CSS for bio ends here */
-
-.hyperlink {
-	margin-top: 45px;
-	/*margin-top: 55px;*/
-	text-align: center;
-}
-
-.hyperlink p {
-	display: inline-block;
-	margin-left: 10px;
-}
-
-.hyperlink a:hover {
-	color: #a3c6d0;
-    text-decoration: underline;
-}
-
-.hyperlink a:link, .hyperlink a:visited {
-	color: #a3c6d0;
-}
-
-#resume h2, #socials h2{
-	margin-top: 46px;
-	margin-left: 0px;
-    font-size: 24px;
-    text-align: center;
-}
-
-#resume {
-	float: left;
-	width: 465px;
-	height: 150px;
-	margin-top: -150px;
-}
-
-#resume img{
+.dropdown-caret {
 	float: right;
-	margin-top: -30px;
-	width: 50px;
-    height: 50px;
+	font-size: 14px;
+	pointer-events: none;
+	margin: 0px 0px 2px 4px;
+
+	transition: 0.1s ease-in-out;
+	transition-property: transform, margin;
+	/* background-color: orange; */
 }
 
-#resume .hyperlink {
-	margin-top: 48px;
+.animate-dropdown-caret {
+	margin: 0px 0px 0px 4px;
+	transform: rotate(-180deg);
 }
 
-#resume p{
-	text-align: center;
-	margin-right: 62px;
+.dropdown-content {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0%;
+
+	margin: 19px auto auto -19px;
+	background-color: #1e1e1e;
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+	z-index: 1;
+
+	transition: 0.1s ease-in-out;
+	transition-property: visibility, opacity, margin;
 }
 
-#socials{
-	float: right;
-	width: 465px;
-	height: 150px;	
+.dropdown-content a {
+	display: block;
+	font-size: 18px;
+	padding: 30px 20px;
+	/*margin: 10px 10px;*/
+
+	transition: 0.1s ease-in-out;
+	transition-property: background-color, color;
 }
 
-#socials img{
-	float: right;
-	margin-top: 20px;
-	margin-left: 35px;
-	width: 45px;
-    height: 45px;
+.show-dropdown-content {
+	visibility: visible;
+	opacity: 100%;
+	margin: 54px auto auto -19px;
 }
 
-a:hover #social01, a:focus #social01 {
-    transform: scale(1.075);
-} 
-a:hover #social02, a:focus #social02 {
-    transform: scale(1.075);
-} 
-a:hover #social03, a:focus #social03 {
-    transform: scale(1.075);
-} 
-a:hover #social04, a:focus #social04 {
-    transform: scale(1.075);
-} 
-a:hover #resume01, a:focus #resume01 {
-    transform: scale(1.075);
-} 
-
-.icons { 
-	margin-right: 90px;
-}
-
-#contactimage img {
-	margin-top: 0px;
-    width: 960px;
-    height: 540px;
-}
-/*CSS for about page ends here*/
-
-/*CSS for footer starts here*/
-footer {
-	height: 70px;
+.dropdown-overlay {
+	visibility: hidden;
+	position: fixed;
 	width: 100%;
-	float: left;
-	margin: 75px auto 0px auto;
+	height: 100%;
+	top: 0%;
+	opacity: 50%;
 	background-color: black;
 }
 
-small {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	margin-left: 46px;
-	color: white;	
-	font-size: 12px;
+.show-dropdown-overlay {
+	visibility: visible;
 }
 
-.copyright {
-	margin-top: 23px;
+/*.dropdown:hover .dropdown-content {
+	visibility: visible;
+	opacity: 100%;
+}*/
+
+.dropdown-button:hover {
+	color: #a3c6d0;
 }
-/*CSS for footer ends here*/
+
+/*.dropdown-button:active {
+	color: white;
+}*/
+
+.dropdown-content a:hover {
+	color: #a3c6d0;
+	/*background-color: black;*/
+}
+/* CSS for the drop down menu ENDS here */
 
 
+
+/* CSS for footer STARTS here */
+main {
+	margin: 0px auto;
+	min-height: calc(100vh - 130px + 65px);
+	/*background-color: pink;*/
+}
+
+footer {
+	float: left;
+	display: flex;
+	align-items: center;
+
+	width: 100%;
+	height: 65px;
+	min-width: 980px;
+	background-color: black;
+}
+
+#credits {
+	flex: none;
+	width: auto;
+	height: auto;
+	margin: auto 0 auto 40px;
+	/* background-color: blue; */
+}
+
+#copyright {
+	flex: none;
+	margin-top: 20px;
+}
+
+#social-icons {
+	float: right;
+	flex: none;
+	display: flex;
+	align-items: center;
+
+	width: auto;
+	height: 40px;
+	margin: auto 40px auto auto;
+	/* background-color: blue; */
+}
+
+.icon {
+	float: left;
+	flex: none;
+	margin: auto 0px auto 20px;
+}
+
+.icon svg {	
+	width: auto;
+	/*height: 18px;*/
+	fill: white;
+	transition: fill 0.1s ease-in-out;
+}
+
+.icon svg:hover {
+	fill: #a3c6d0;
+}
+
+#social-icons #first-icon {
+	margin-left: 40px;
+}
+
+#linkedin-icon{
+	height: 18px;
+}
+
+#gmail-icon {
+	padding-top: 2px;
+	height: 16px;
+}
+
+#github-icon {
+	padding-top: 0.5px;
+	height: 19px;
+}
+
+#vimeo-icon {
+	padding-top: 1.5px;
+	height: 18px;
+}
+
+#artstation-icon {
+	height: 18px;
+}
+
+#sketchfab-icon {
+	height: 20px;
+}
+
+#youtube-icon {
+	padding-top: 1px;
+	height: 17px;
+}
+
+#twitter-icon {
+	height: 18px;
+}
+/* CSS for footer ENDS here */
+
+
+
+/* CSS for webpage START here */
+#row {
+	padding-top: 130px;
+	margin: 0 auto;
+	width: 980px;
+
+	/*content: "";
+	clear: both;
+	display: table;*/
+}
+
+.spacing {
+	float: left;
+	width: 100%;
+	height: 60px;
+	/*background-color: grey;*/
+}
+
+.webpage-title h1 {
+	float: left;
+	text-align: center;
+	font-size: 36px;
+
+	width: 100%;
+	padding: 20px 0px;
+	margin-bottom: 40px;
+	/*background-color: orange;*/
+}
+
+.demoreel {
+	float: left;
+}
+
+.sketchfab-viewer {
+	float: left;
+}
+
+iframe {
+	margin: 20px;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px rgba(0,0,0,.3);
+}
+
+.column {
+	float: left;
+}
+/* CSS for webpage here */
+
+
+
+/* CSS for thumbnails and concept images START here */
+#row img {
+	transition: transform 0.1s linear;
+}
+
+#thumbnail, #concept, #highlight-image, #headshot {
+	margin: 20px;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px rgba(0,0,0,.3);
+}
+
+#thumbnail {
+	width: 450px;
+	height: auto;
+}
+
+#concept, #highlight-image {
+	width: 940px;
+	height: auto;
+}
+
+a:hover #thumbnail {
+	transform: scale(1.044);
+}
+
+/* CSS for thumbnails and concept images END here */
+
+
+/* CSS for about me page STARTS here */
+#headshot {
+	float: left;
+	width: 450px;
+	height: auto;
+}
+
+#summary {
+	float: left;
+	width: 450px;
+	height: 450px;
+
+	margin: 20px;
+	line-height: 30px;
+	/*background-color: pink;*/
+}
+
+#hyperlink {
+	color: #a3c6d0;
+}
+
+#hyperlink:hover {
+	text-decoration: underline;
+}
+
+.section {
+	float: left;
+	width: 450px;
+	height: auto;
+	margin: 20px;
+	/*background-color: pink;*/
+}
+
+.section-title {
+	width: auto;
+	height: 25px;
+	margin-bottom: 10px;
+	/*background-color: purple;*/
+}
+
+.section-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: auto;
+	height: 45px;
+	/*background-color: orange;*/
+}
+
+.section-title h2 {
+	position: relative;
+	top: 50%;
+
+	font-size: 24px;
+	text-align: center;
+}
+
+.section-content p {
+	flex: none;
+	float: left;
+
+	padding: 20px 0px;
+	/*background-color: blue;*/
+}
+
+.download-link {
+	flex: none;
+	float: left;
+	
+	margin-left: 20px;
+	/*background-color: blue;*/
+}
+
+.download-link img {
+	width: auto;
+	height: 35px;
+}
+
+.social-link {
+	flex: none;
+	float: left;
+
+	margin: auto 20px auto 20px;
+	/*background-color: blue;*/
+}
+
+.social-link img {
+	width: auto;
+	height: 45px;
+}
+
+a:hover #icon-link {
+	transform: scale(1.066);
+}
+/* CSS for about me page ENDS here */
+
+
+
+
+
+
+/* FOR REFRENCE: use this to calulate the scroll bar's width */
+/* margin-right: calc(40px + calc(100vw - 100%)); */
+
+/* FOR REFERENCE: link to CSS filter generator: https://codepen.io/sosuke/pen/Pjoqqp */
+/* converts black image (svg) to white (#ffffff) */
+/* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(102%) contrast(105%); */
+/* converts black image (svg) to light blue (#a3c6d0) */
+/* filter: invert(91%) sepia(6%) saturate(1423%) hue-rotate(157deg) brightness(87%) contrast(85%); */
+
+/* For Reference */
+/* NOTE: 40px + WidthOfLogo(90px) + 40px + WidthOfName(136px) + WidthOfNav(970px) + 40px = MinLengthOfHeader(1316px) */
+@media screen and (max-width: 1332px) {
+
+	/* Switch to drop down menu here!!! */
+	/* #webpages {
+		background-color: purple;
+	} */
+}
