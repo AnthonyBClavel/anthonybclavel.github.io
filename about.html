@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="slideUp()">
     <!-- wrapper STARTS here -->
     <div id="wrapper">
 
@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="webpage">
-                    <a href="about.html" id="current">About</a>
+                    <a href="#top" id="current">About</a>
                 </div>
 
                 <!-- <div class="webpage">
@@ -69,12 +69,12 @@
                 </div>
 
                 <!-- headshot -->
-                <div class="column">
+                <div class="section">
                     <img src="images/headshots/hs_babytony.jpg" id="headshot" alt="Headshot of Anthony Clavel">
                 </div>
 
                 <!-- professional summary -->
-                <div class="column">
+                <div class="section">
                     <p id="summary">
                         Tony holds a BFA in Computer Game Design from George Mason University. He works with artists, programmers, and sound designers to make immersive games 
                         by designing and creating unique experiences and interactions. After studying and practicing computer game design techniques for nearly four years at 
@@ -94,7 +94,7 @@
                         <p><a href="Clavel_Resume_2023.pdf" target="_blank" id="hyperlink">Clavel_Resume_2023</a></p>
 
                         <div class="download-link">
-                            <a href="Clavel_Resume_2023.pdf" target="_blank"><img src="images/icons/icon_download_bv.svg" id="icon-link" alt="Anthony Clavel's Resume"></a>
+                            <a href="Clavel_Resume_2023.pdf" download="Clavel_Resume_2023"><img src="images/icons/icon_download_bv.svg" id="icon-link" alt="Anthony Clavel's Resume"></a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                 </div>
 
                 <!-- highlight image -->
-                <div class="column">
+                <div class="column" id="contact">
                     <a href="images/highlightimages/hi_contact.jpg" data-lightbox="photo"><img src="images/highlightimages/hi_contact.jpg" id="highlight-image" alt="Contact Card"></a>
                 </div>
 
@@ -260,6 +260,7 @@
     <!-- wrapper END here -->
 
     <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/scroll-animation.js"></script>
     <script src="js/dropdown.js"></script>
 </body>
 

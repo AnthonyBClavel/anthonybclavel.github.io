@@ -34,6 +34,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	line-height: 0;
 	/* CSS for the background STARTS here */
@@ -219,9 +223,17 @@ nav {
 	visibility: hidden;
 	opacity: 0%;
 
+	border: #a3c6d0;
+	border-radius: 6px;
+	border-style: solid;
+	border-width: thin;
+
 	margin: 19px auto auto -19px;
-	background-color: #1e1e1e;
-	box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+	/* margin: 19px auto auto -64.61px; */
+
+	/* background-color: #1e1e1e; */
+	background-color: rgba(0, 0, 0, 0.95);
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
 	z-index: 1;
 
 	transition: 0.1s ease-in-out;
@@ -241,7 +253,9 @@ nav {
 .show-dropdown-content {
 	visibility: visible;
 	opacity: 100%;
+
 	margin: 54px auto auto -19px;
+	/* margin: 54px auto auto -64.61px; */
 }
 
 .dropdown-overlay {
@@ -273,7 +287,7 @@ nav {
 
 .dropdown-content a:hover {
 	color: #a3c6d0;
-	/*background-color: black;*/
+	/* background-color: black; */
 }
 /* CSS for the drop down menu ENDS here */
 
@@ -382,7 +396,7 @@ footer {
 
 
 
-/* CSS for webpage START here */
+/* CSS for webpage STARTS here */
 #row {
 	padding-top: 130px;
 	margin: 0 auto;
@@ -427,8 +441,32 @@ iframe {
 
 .column {
 	float: left;
+	margin: 20px;
+	/* position: relative; */
+	
+	/* transform: translateY(80px);
+	filter: blur(1px);
+	opacity: 0%; */
+
+	transition-property: transform,filter, opacity;
+	transition: 1s ease;
 }
-/* CSS for webpage here */
+
+.inactive {
+	transform: translateY(80px);
+	filter: blur(1px);
+	opacity: 0%;
+
+	transition-property: transform, opacity;
+	transition: 1s ease;
+}
+
+.active {
+	transform: translateY(0px);
+	filter: blur(0px);
+	opacity: 100%;
+}
+/* CSS for webpage ENDS here */
 
 
 
@@ -438,7 +476,6 @@ iframe {
 }
 
 #thumbnail, #concept, #highlight-image, #headshot {
-	margin: 20px;
 	border-radius: 6px;
 	box-shadow: 6px 6px 6px rgba(0,0,0,.3);
 }
@@ -454,7 +491,8 @@ iframe {
 }
 
 a:hover #thumbnail {
-	transform: scale(1.044);
+	/* Note: scale was 1.044 originally */
+	transform: scale(1.033); 
 }
 
 /* CSS for thumbnails and concept images END here */
@@ -464,7 +502,7 @@ a:hover #thumbnail {
 #headshot {
 	float: left;
 	width: 450px;
-	height: auto;
+	height: 450px;
 }
 
 #summary {
@@ -472,9 +510,8 @@ a:hover #thumbnail {
 	width: 450px;
 	height: 450px;
 
-	margin: 20px;
 	line-height: 30px;
-	/*background-color: pink;*/
+	/* background-color: pink; */
 }
 
 #hyperlink {

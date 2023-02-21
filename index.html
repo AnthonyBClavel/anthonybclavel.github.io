@@ -10,24 +10,24 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="slideUp()">
 
 	<!-- wrapper STARTS here -->
 	<div id="wrapper">
 
 		<header>
 			<div id="website-logo">
-				<a href="index.html"><img src="images/headshots/hs_websitelogo.png" id="logo" alt="Website Logo"></a>
+				<a href="#top"><img src="images/headshots/hs_websitelogo.png" id="logo" alt="Website Logo"></a>
 			</div>
 
 			<div id="name-and-title">
-				<h1><a href="index.html">Anthony Clavel</a></h1>
-				<h2><a href="index.html">3D Game Artist</a></h2>
+				<h1><a href="#top">Anthony Clavel</a></h1>
+				<h2><a href="#top">3D Game Artist</a></h2>
 			</div>
 
 			<nav>
 				<div class="webpage">
-					<a href="index.html" id="current">Home</a>
+					<a href="#top" id="current">Home</a>
 				</div>
 
 				<div class="dropdown">
@@ -97,7 +97,7 @@
 				</div>
 
 				<div class="column">
-					<a href="about.html"><img src="images/thumbnails/thumb_contact.jpg" id="thumbnail" alt="Contact Card"></a>
+					<a href="about.html#contact"><img src="images/thumbnails/thumb_contact.jpg" id="thumbnail" alt="Contact Card"></a>
 				</div>
 				<!-- thumbnails END here -->
 
@@ -232,6 +232,7 @@
 	<!-- wrapper END here -->
 
 	<!-- NOTE: a <script> MUST be linked within each html page to prevent a bug that triggers transitions when the page initially loads -->
+	<script src="js/scroll-animation.js"></script>
 	<script src="js/dropdown.js"></script>
 </body>
 
