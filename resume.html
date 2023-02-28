@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <!-- below is the css for the entire website -->
+    <link rel="stylesheet" href="css/portfoliowebsite.css">
+    <!-- below is the css for the light box -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- below is the css for the fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body onload="slideUp()">
+    <!-- wrapper STARTS here -->
+    <div id="wrapper">
+
+        <header>
+            <div id="website-logo">
+                <a href="index.html"><img src="images/headshots/hs_websitelogo.png" id="logo" alt="Website Logo"></a>
+            </div>
+
+            <div id="name-and-title">
+                <h1><a href="index.html">Anthony Clavel</a></h1>
+                <h2><a href="index.html">3D Game Artist</a></h2>
+            </div>
+
+            <nav>
+                <div class="webpage">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="dropdown">
+                    <button onclick="showDropdown()" class="dropdown-button" id="dd-button">
+                        Portfolio
+                        <div class="dropdown-caret" id="dd-caret">
+							<i>&#9660;</i>
+						</div>
+                    </button>
+                    <div class="dropdown-content" id="dd-content">
+                        <a href="scifininja.html">SciFi Ninja</a>
+                        <a href="galaxyboy.html">Galaxy Boy</a>
+                        <a href="medievaltower.html">Medieval Tower</a>
+                        <a href="souprobot.html">Soup Robot</a>
+                        <a href="rustyrobot.html">Rusty Robot</a>
+                    </div>
+                </div>
+
+                <div class="webpage">
+                    <a href="#top" id="current">Resume</a>
+                </div>
+
+                <div class="webpage">
+                    <a href="about.html">About</a>
+                </div>
+
+               
+            </nav>
+        </header>
+
+
+        <main>
+            <!-- row starts -->
+            <div id="row">
+                <div class="spacing"></div>
+
+                <!-- title for webpage -->
+                <div class="webpage-title">
+                    <h1>Resume</h1>
+                </div>
+
+                <!-- headshot -->
+                <!-- <div class="column">
+                    <img src="images/headshots/hs_babytony.jpg" id="headshot" alt="Headshot of Anthony Clavel">
+                </div> -->
+
+                <!-- professional summary -->
+                <div class="test">
+                    <h2>Summary</h2>
+                    
+                    <p id="test-summary">                       
+                        Anthony Clavel holds a BFA in Computer Game Design from George Mason University. He works with artists, programmers, and sound designers to make 
+                        immersive games by designing and creating unique experiences and interactions. After studying and practicing computer game design techniques for
+                        nearly four years at George Mason University, he has learned and acquired the skills needed to become proficient across many disciplines in game 
+                        design. It’s not just about coming up with great ideas, but also how well one can execute and collaborate on such ideas! If you’re interested in
+                        working together, please email <a href="mailto:abclavel123@gmail.com" id="hyperlink">abclavel123@gmail.com</a> or click on any of the socials 
+                        down below to contact Tony.
+                    </p>
+                </div>
+
+                <div class="test">
+                    <h2>Skills</h2>
+
+                    <div id="skills-list">      
+                        <span class="skill-tag">Unity Engine</span>
+                        <span class="skill-tag">C# (Programming Language)</span>
+                        <span class="skill-tag">Game Design</span>
+                        <span class="skill-tag">Game Development</span>
+                        <span class="skill-tag">3D Game Art</span>
+                        <span class="skill-tag">3D Modeling</span>
+                        <span class="skill-tag">3D Animation</span>
+                        <span class="skill-tag">Technical Art</span>
+                        <span class="skill-tag">UI Design</span>
+                        <span class="skill-tag">Level Design</span>
+                        <span class="skill-tag">Sound Design</span>
+                        <span class="skill-tag">Unreal Engine</span>
+                    </div>        
+                </div>
+
+                <div class="test">
+                    <h2>Software Proficiency</h2>
+
+                    <div id="software-list">     
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_unity.svg" class="software-icon" alt="Unity Icon">
+                            <div class="software-name">Unity</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_unreal.svg" class="software-icon" alt="Unreal Icon">
+                            <div class="software-name">Unreal Engine</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_visualstudio.svg" class="software-icon" alt="Visual Studio Icon">
+                            <div class="software-name">Visual Studio</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_visualstudiocode.svg" class="software-icon" alt="Visual Studio Code Icon">
+                            <div class="software-name">Visual Studio Code</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_3dsmax.svg" class="software-icon" alt="3DS Max Icon">
+                            <div class="software-name">3DS Max</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_autocad.svg" class="software-icon" alt="AutoCAD Icon">
+                            <div class="software-name">AutoCAD</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_photoshop.svg" class="software-icon" alt="Photoshop Icon">
+                            <div class="software-name">Photoshop</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_premiere.svg" class="software-icon" alt="Premiere Icon">
+                            <div class="software-name">Premiere</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_illustrator.svg" class="software-icon" alt="Illustrator Icon">
+                            <div class="software-name">Illustrator</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_dreamweaver.svg" class="software-icon" alt="Dreamweaver Icon">
+                            <div class="software-name">Dreamweaver</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_affinityphoto.svg" class="software-icon" alt="Affinity Photo Icon">
+                            <div class="software-name">Affinity Photo</div>
+                        </div>
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_affinitydesigner.svg" class="software-icon" alt="Affinity Designer Icon">
+                            <div class="software-name">Affinity Designer</div>
+                        </div> 
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_davinciresolve.svg" class="software-icon" alt="DaVinci Resolve Icon">
+                            <div class="software-name">DaVinci Resolve</div>
+                        </div>
+
+                        <div class="software-list-item">
+                            <img src="images/software-icons/icon_audacity.svg" class="software-icon" alt="Audacity Icon">
+                            <div class="software-name">Audacity</div>
+                        </div>
+
+
+                    </div>        
+                </div>
+
+                <!-- resume section -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2>Resume</h2>
+                    </div>
+
+                    <div class="section-content">
+                        <p><a href="Clavel_Resume_2023.pdf" target="_blank" id="hyperlink">Clavel_Resume_2023</a></p>
+
+                        <div class="download-link">
+                            <a href="Clavel_Resume_2023.pdf" download="Clavel_Resume_2023"><img src="images/icons/icon_download_bv.svg" id="icon-link" alt="Anthony Clavel's Resume"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- socials section -->
+                <div class="section">
+                    <div class="section-title">
+                        <h2>Socials</h2>
+                    </div>
+
+                    <div class="section-content">
+                        <div class="social-link">
+                            <a href="https://www.linkedin.com/in/anthonybclavel/" target="_blank"><img src="images/icons/icon_linkedin.svg" id="icon-link" alt="LinkedIn Icon"></a>
+                        </div>
+
+                        <div class="social-link">
+                            <a href="https://anthonybclavel.artstation.com/" target="_blank"><img src="images/icons/icon_artstation.svg" id="icon-link" alt="ArtStation Icon"></a>
+                        </div>
+
+                        <div class="social-link">
+                            <a href="https://vimeo.com/user96448543" target="_blank"><img src="images/icons/icon_vimeo.svg" id="icon-link" alt="Vimeo Icon"></a>
+                        </div>
+
+                        <div class="social-link">
+                            <a href="https://sketchfab.com/AnthonyBClavel" target="_blank"><img src="images/icons/icon_sketchfab.svg" id="icon-link" alt="Skecthfab Icon"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- highlight image -->
+                <div class="column" id="contact">
+                    <a href="images/highlightimages/hi_contact.jpg" data-lightbox="photo"><img src="images/highlightimages/hi_contact.jpg" id="highlight-image" alt="Contact Card"></a>
+                </div>
+
+                <div class="spacing"></div>
+            </div>
+            <!-- row ends -->
+        </main>
+
+
+        <!-- footer STARTS here -->
+        <footer>
+            <div id="credits">
+                <small>Designed By: Anthony Clavel</small>
+
+                <div id="copyright">
+                    <small>&copy; Anthony Clavel 2023</small>
+                </div>
+            </div>
+
+            <!-- social icons START here -->
+            <div id="social-icons">
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/anthonybclavel/" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 270 272" id="linkedin-icon" alt="LinkedIn Icon">
+                            <path d="M32.497,0.524c17.937,-0 32.5,14.563 32.5,32.5c-0,17.937 -14.563,32.5 -32.5,32.5c-17.937,-0 -32.5,
+							-14.563 -32.5,-32.5c-0,-17.937 14.563,-32.5 32.5,-32.5Zm27.5,88.952l-55,0l-0,182l55,0l-0,-182Zm89.402,
+							0l-53.402,0l-0,182l55,0l-0,-91c-0,-17.42 2.233,-45.65 34.23,-45.65c31.997,-0 29.77,33.821 29.77,45.65l-0,
+							91l55,0l-0,-91c-0,-32.984 1.686,-86.828 -50.519,-94.069c-52.205,-7.241 -70.079,28.793 -70.079,28.793l0,-25.724Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="icon">
+                    <a href="mailto:abclavel123@gmail.com" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 388 288" id="gmail-icon" alt="Gmail Icon">
+                            <path d="M0.25,84.69l78.282,58.509c-0,-0 -0,144.657 -0,144.657c-0,0 -57.032,0 -57.032,0c-5.636,0 -11.041,-2.239 -15.026,
+							-6.224c-3.985,-3.985 -6.224,-9.39 -6.224,-15.026l-0,-181.916Zm387.5,0l-0,181.916c0,5.636 -2.239,11.041 -6.224,
+							15.026c-3.985,3.985 -9.39,6.224 -15.026,6.224c0,0 -57.032,0 -57.032,0l0,-144.657l78.282,-58.509Zm-296.718,
+							-50.79l99.207,74.758c2.226,1.678 5.296,1.678 7.522,0l99.207,-74.758l0,103.036c0,-0 -102.968,76.959 -102.968,
+							76.959l-102.968,-76.959l-0,-103.036Zm296.718,35.185l-78.282,58.508l0,-103.112l24.112,-18.17c10.541,-7.943 24.062,
+							-7.673 34.937,-2.268c10.869,5.401 19.233,16 19.233,29.192l-0,35.85Zm-309.218,-44.604l-0,103.112c-0,0 -78.282,
+							-58.508 -78.282,-58.508c0,-0 -0,-35.85 -0,-35.85c-0,-13.192 8.364,-23.791 19.233,-29.192c10.875,-5.405 24.396,
+							-5.675 34.937,2.268l24.112,18.17Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="icon">
+                    <a href="https://github.com/AnthonyBClavel" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 500 489" id="github-icon" alt="GitHub Icon">
+                            <path d="M250,0.565c117.352,0 250,86.419 250,250c0,163.581 -129.943,223.286 -165.538,235.631c-15.51,5.379 -23.246,
+							0.356 -23.246,-16.06c-0,-16.416 -0.029,-75.92 -0.029,-75.92c-1.833,-22.214 -16.152,-34.069 -16.152,-34.069c25.117,
+							-2.121 88.887,-11.549 106.646,-70.139c25.552,-84.302 -17.981,-119.745 -17.981,-119.745c13.185,-35.935 -2.463,
+							-67.548 -2.463,-67.548c-34.985,1.087 -69.108,26.886 -69.108,26.886c-19.769,-6.074 -41.449,-8.993 -62.129,
+							-8.993c-20.68,0 -42.36,2.919 -62.129,8.993c0,-0 -34.123,-25.799 -69.108,-26.886c0,0 -15.648,31.613 -2.463,67.548c-0,
+							-0 -43.533,35.443 -17.981,119.745c17.759,58.59 81.529,68.018 106.646,70.139c-0,-0 -14.319,11.855 -16.152,34.069c0,
+							0 -18.266,8.467 -37.579,5.921c-17.162,-2.261 -27.761,-13.966 -36.846,-28.7c-8.333,-13.514 -22.724,-24.135 -37.239,
+							-24.135c-14.515,-0 -14.661,7.21 0,15.909c14.661,8.698 19.886,17.768 25.494,33.681c5.607,15.913 16.401,27.391 36.608,
+							31.706c15.229,3.251 34.333,3.251 49.562,-0c0,-0 -0.029,25.122 -0.029,41.538c0,16.416 -7.736,21.439 -23.246,
+							16.06c-35.595,-12.345 -165.538,-72.05 -165.538,-235.631c0,-163.581 132.648,-250 250,-250Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="icon">
+                    <a href="https://vimeo.com/user96448543" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 336 290" id="vimeo-icon" alt="Vimeo Icon">
+                            <path d="M0.952,79.249c0,-0 21.133,-18.79 41.984,-37.328c24.852,-22.097 44.427,-39.792 68.371,-35.269c23.945,
+							4.523 31.132,27.523 34.259,46.876c6.231,38.565 18.647,132.164 38.265,132.164c12.893,0 54.853,-57.118 54.853,
+							-89.451c-0,-26.374 -28.372,-23.926 -47.456,-16.226c-0,-0 12.532,-46.619 47.456,-67.622c34.923,-21.004 78.247,
+							-15.418 92.074,22.917c10.29,28.527 5.504,68.642 -53.059,150.382c-48.101,67.137 -92.68,104.003 -127.075,
+							104.003c-25.861,-0 -42.29,-33.056 -49.872,-57.781c-19.911,-64.93 -32.675,-148.105 -57.816,-148.105c-2.812,
+							0 -7.907,2.191 -26.217,15.644" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="icon">
+                    <a href="https://anthonybclavel.artstation.com/" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 364 320" id="artstation-icon" alt="Artstation Icon">
+                            <path d="M359.071,228.25c6.431,11.138 6.431,24.862 0,36c-12.563,21.76 -32.043,55.5 -32.043,55.5l-184.463,
+							-319.5l64.086,0c12.861,-0 24.746,6.862 31.177,18c26.249,45.465 94.994,164.535 121.243,210Zm-132.213,
+							18l42.435,73.5l-205.537,-0c-12.861,0 -24.746,-6.862 -31.176,-18c-12.564,-21.76 -32.043,-55.5 -32.043,
+							-55.5l226.321,-0Zm-28.868,-50l-168.586,-0l84.293,-146l84.293,146Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="icon">
+                    <a href="https://sketchfab.com/AnthonyBClavel" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 260 302" id="sketchfab-icon" alt="Sketchfab Icon">
+                            <path d="M147,173.539l112.904,-60.032l-0,122.81l-112.904,65.185l-0,-127.963Zm-34,0l-0,127.963l-112.904,-65.185l0,
+							-122.81l112.904,60.032Zm146.904,-98.539l-129.904,69.071l-129.904,-69.071l129.904,-75l129.904,75Z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!--<div class="icon">
+                    <a href="https://www.youtube.com/@TonyClavel" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 414 290" id="youtube-icon" alt="YouTube Icon">
+                            <path d="M207,289.056c14.006,-0 96.17,0.048 148.912,-6.3c30.271,-3.644 45.367,-17.833 50.991,-47.799c5.087,
+                            -27.104 6.573,-59.971 6.573,-89.957c-0,-29.986 -1.486,-62.853 -6.573,-89.957c-5.624,-29.966 -20.72,
+                            -44.155 -50.991,-47.799c-52.742,-6.348 -136.206,-6.3 -148.912,-6.3c-12.706,0 -96.17,-0.048 -148.912,
+                            6.3c-30.271,3.644 -45.367,17.833 -50.991,47.799c-5.087,27.104 -6.573,59.971 -6.573,89.957c0,29.986 1.486,
+                            62.853 6.573,89.957c5.624,29.966 20.72,44.155 50.991,47.799c52.742,6.348 134.906,6.3 148.912,6.3Zm67.5,
+                            -144.056l-108,62.354l-0,-124.708l108,62.354Z" />
+                        </svg>
+                    </a>
+                </div>-->
+
+                <!--<div class="icon">
+                    <a href="https://twitter.com/SilverTheBosss" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 396 324" id="twitter-icon" alt="Twitter Icon">
+                            <path d="M356.051,81.05c-0,-0 9.688,101.654 -69.78,177.225c-121.293,115.345 -265.274,46 -286.219,28.896c45.244,
+                            3.941 85.566,-6.866 119.718,-34.114c-36.24,-2.588 -62.764,-19.855 -75.652,-56.573c10.681,2.38 26.883,
+                            1.749 36.168,-1.448c-37.608,-7.258 -65.763,-42.221 -64.833,-80.513c11.51,6.48 23.681,9.256 36.34,
+                            9.299c-37.238,-26.501 -45.15,-71.393 -24.356,-108.509c45.162,53.772 101.076,82.091 167.614,84.999c-9.241,
+                            -47.943 17.587,-77.221 43.437,-90.997c25.85,-13.777 65.956,-13.585 95.402,17.003c17.625,-3.239 34.669,
+                            -9.734 51.145,-19.41c-5.702,18.992 -17.314,33.811 -34.742,44.526c15.789,-1.636 31.015,-5.749 45.655,
+                            -12.443c-10.278,16.481 -23.411,30.636 -39.897,42.059Z" />
+                        </svg>
+                    </a>
+                </div>-->
+                <!-- social icons END here -->
+            </div>
+        </footer>
+        <!-- footer ENDS here -->
+
+
+        <div class="dropdown-overlay" id="dd-overlay"></div>
+    </div>
+    <!-- wrapper END here -->
+
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/scroll-animation.js"></script>
+    <script src="js/dropdown.js"></script>
+</body>
+
+</html>
