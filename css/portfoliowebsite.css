@@ -407,6 +407,14 @@ footer {
 	display: table;*/
 }
 
+#row a {
+	color: #a3c6d0;
+}
+
+#row a:hover {
+	text-decoration: underline;
+}
+
 .spacing {
 	float: left;
 	width: 100%;
@@ -509,14 +517,6 @@ a:hover #thumbnail-overlay {
 	/* background-color: pink; */
 }
 
-#hyperlink {
-	color: #a3c6d0;
-}
-
-#hyperlink:hover {
-	text-decoration: underline;
-}
-
 .section {
 	float: left;
 	width: 450px;
@@ -592,116 +592,247 @@ a:hover #icon-link {
 
 
 
-.skill-tag {
+
+
+/* CSS for fonts in resume page STARTS here */
+.resume-section, #resume-summary {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: small;
 	color: white;
 }
 
-
-/* css for text in sp section */
-.software-name {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+#resume-name, #resume-summary, #resume-download-hyperlink {
 	font-size: large;
-	color: white;
 }
 
-
-
-
-
-.test {
-	float: left;
-	width: 940px;
-	height: auto;
-
-	margin: 0px 20px;
-	padding: 60px 0px 60px 0px;
-
-	border-bottom: 3px solid black ;
-	background-color: orange;
+#resume-title, #resume-email, .software-name {
+	font-size: medium;
 }
 
-.test h2 {
-	padding: 40px 0px;
-	text-align: left;
-	/* margin-left: 0px; */
+#resume-location, .skill-tag {
+	font-size: small;
+}
 
+#resume-name {
+	letter-spacing: 9px;
+	font-weight: bold;
+}
+
+.resume-section h2 {
 	font-size: 30px;
 	font-weight: bold; /* 800 */
-	background-color: blue;
+}
+/* CSS for fonts in resume page ENDS here */
+
+
+
+
+
+/* CSS for "Resume" page STARTS here */
+.resume-section {
+	float: left;
+	height: auto;
+	width: 940px;
+
+	margin: 0px 20px;
+	padding: 50px 0px 50px 0px;
+
+	border-bottom: 1px solid white ;
+	/* background-color: orange; */
 }
 
+.resume-section h2 {
+	padding: 30px 0px;
+	text-align: left;
+	margin-bottom: 20px;
+	/* background-color: blue; */
+}
 
-#test-summary {
+#resume-summary {
 	float: left;
 	width: auto;
 	height: auto;
 
-	font-size: 20px;
+	font-size: large;
 	line-height: normal;
-	background-color: black;
+	/* background-color: black; */
 }
 
-
-
-#skills-list {
-	/* display: grid; */
-	/* grid-template-columns: max-content max-content max-content; */
-	/* gap: 10px; */
+#resume-skills-list {
 	float: left;
-	margin-left: -10px;
-	margin-bottom: -20px;
-
-	background-color: black;
+	margin: 0px 0px -20px -10px;
+	/* background-color: black; */
 }
 
 .skill-tag {
 	float: left;
 	padding: 20px 20px;
 	margin: 0px 10px 20px 10px;
+
 	border: 3px solid white;
-	
-	background-color: black;
+	border-radius: 6px;
+	/* background-color: blue; */
 }
 
-
-
-#software-list {
-	/* float: left; */
-	background-color: black;
-
+#resume-software-list {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	gap: 20px 100px;
+	/* background-color: black; */
 }
 
 .software-list-item {
 	float: left;
-	/* margin-left: 40px; */
-	/* background-color: green; */
+	display: flex;
+	align-items: center;
+	/* background-color: orange; */
 }
 
 .software-icon {
+	flex: none;
 	float: left;
-	width: 50px;
-	height: auto;
-	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(102%) contrast(105%);
+	width: 40px;
+	height: 40px;
 
-	/* background-color: yellow; */
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(102%) contrast(105%);
+	/* background-color: white; */
 }
 
 .software-name {
+	flex: none;
     float: left;
-	padding: 25px 0px;
-	margin: 0px 10px;
-	/* background-color: purple; */
+	
+	padding: 20px 0px;
+	margin-left: 20px;
+	/* background-color: blue; */
+}
+
+.resume-download {
+	display: flex;
+	align-items: center;
+	/* background-color: black; */
+}
+
+/* the parent element that holds the #resume-download-icon */
+.resume-download a:last-child {
+	flex: none;
+	float: left;
+	margin-left: 20px;
+	/* background-color: blue; */
+}
+
+#resume-download-hyperlink {
+	flex: none;
+	float: left;
+	padding: 17.5px 0px;
+	/* background-color: blue; */
+}
+
+#resume-download-icon {
+	width: auto;
+	height: 20px;
+}
+
+#resume-download-icon:hover {
+	transform: scale(1.066);
 }
 
 
 
+
+
+
+
+
+#resume-intro {
+	display: inline-block;
+	/* background-color: black; */
+}
+
+/* the parent element that holds #resume-headshot */
+#resume-intro div:first-child {
+	margin-top: 0px;
+}
+
+/* the parent element that holds #resume-email */
+#resume-intro div:nth-child(5) {
+	margin: 20px 0px 10px 0px;
+}
+
+.resume-intro-row {
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	margin-top: 10px;
+	/* background-color: orange; */
+}
+
+#resume-headshot {
+	float: left;
+	height: auto;
+	width: 150px;
+	/* background-color: blue; */
+}
+
+#resume-name, #resume-title, #resume-location, #resume-email {
+	float: left;
+	display: block;
+	padding: 10px 0px;
+	/* background-color: blue; */
+}
+
+#resume-location-icon {
+	float: left;
+	width: auto;
+	height: 15px;
+	margin-right: 6px;
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(102%) contrast(105%);
+	/* background-color: white; */
+}
+
+.resume-social-link {
+	float: left;
+	margin: auto 10px;
+	/* background-color: blue; */
+}
+
+.resume-social-link img {
+	width: auto;
+	height: 30px;
+}
+
+.resume-social-link img:hover {
+	transform: scale(1.066);
+}
+
+
+
+
+
+
+
+
+.resume-section #contact {
+	margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 
 
 
@@ -709,11 +840,13 @@ a:hover #icon-link {
 /* FOR REFRENCE: use this to calulate the scroll bar's width */
 /* margin-right: calc(40px + calc(100vw - 100%)); */
 
-/* FOR REFERENCE: link to CSS filter generator: https://codepen.io/sosuke/pen/Pjoqqp */
-/* converts black image (svg) to white (#ffffff) */
+
+/* link to CSS filter generator: https://codepen.io/sosuke/pen/Pjoqqp */
+/* converts black svg (#000000) to white (#ffffff) */
 /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(102%) contrast(105%); */
-/* converts black image (svg) to light blue (#a3c6d0) */
+/* converts black svg/image (#000000) to light blue (#a3c6d0) */
 /* filter: invert(91%) sepia(6%) saturate(1423%) hue-rotate(157deg) brightness(87%) contrast(85%); */
+
 
 /* For Reference */
 /* NOTE: 40px + WidthOfLogo(90px) + 40px + WidthOfName(136px) + WidthOfNav(970px) + 40px = MinLengthOfHeader(1316px) */
