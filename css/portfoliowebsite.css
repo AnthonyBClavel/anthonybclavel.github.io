@@ -70,30 +70,44 @@ table {
 /*-------------------- Resetting CSS ENDS here --------------------*/
 
 
+
 /* CSS for fonts START here */
-h1, h2, nav, small, button {
+/*  
+	NOTE: font-size...
+	xx-small = 9px
+	x-small = 10px
+	small = 13px
+	medium = 16px
+	large = 18px
+	x-large = 24px
+	xx-large = 32px
+*/
+
+body, button {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	color: white;
 }
 
-h1, nav, button {
-	font-size: 18px;
+nav, button {
+	font-size: large;
 }
 
-h2 {
-	font-size: 14px;
-}
-
-small {
+footer {
 	font-size: 12px;
 }
 
-p, b {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	font-size: 24px;
-	color: white;
+#website-name h1 {
+	font-size: large;
+}
+
+#website-name h2 {
+	font-size: 14px;
+}
+
+.webpage-title h1 {
+	font-size: xx-large; 
+	/* Original: 36px */
 }
 
 a:link, a:visited, a:active {
@@ -102,6 +116,61 @@ a:link, a:visited, a:active {
 	transition: color 0.1s ease-in-out;
 }
 /* CSS for fonts END here */
+
+
+/* CSS for fonts in about me page START here */
+.section p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: white;
+	
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.section-title h2 {
+	font-size: 24px;
+}
+/* CSS for fonts in about me page END here */
+
+
+/* CSS for fonts in resume page START here */
+.resume-section h2 {
+	font-size: xx-large;
+	font-weight: bold; /* 800 */
+}
+
+#resume-name {
+	font-size: x-large;
+	font-weight: bold;
+	letter-spacing: 9px;
+}
+
+#resume-position {
+	font-size: large;
+}
+
+#resume-location, #resume-email {
+	font-size: medium;
+}
+
+.software-name {
+	font-size: medium;
+}
+
+#resume-download-hyperlink {
+	font-size: medium;
+}
+
+#resume-summary {
+	font-size: medium;
+	line-height: 30px;
+}
+
+.skill-tag {
+	font-size: small;
+}
+/* CSS for fonts in resume page END here */
 
 
 
@@ -124,21 +193,21 @@ header {
 	/*background-color: white;*/
 }
 
-#logo {
+#website-logo img {
 	width: 90px;
 	height: 90px;
 }
 
-#name-and-title {
+#website-name {
 	float: left;
 	flex: none;
 	width: auto;
 	height: 30px;
 	margin: auto 0 auto 40px;
-	/*background-color: blue;*/
+	/* background-color: blue; */
 }
 
-#name-and-title h2 {
+#website-name h2 {
 	margin-top: 30px;
 }
 
@@ -242,7 +311,6 @@ nav {
 
 .dropdown-content a {
 	display: block;
-	font-size: 18px;
 	padding: 30px 20px;
 	/*margin: 10px 10px;*/
 
@@ -425,12 +493,11 @@ footer {
 .webpage-title h1 {
 	float: left;
 	text-align: center;
-	font-size: 36px;
 
 	width: 100%;
 	padding: 20px 0px;
 	margin-bottom: 40px;
-	/*background-color: orange;*/
+	/* background-color: orange; */
 }
 
 .column, .demoreel, .sketchfab-viewer {
@@ -461,20 +528,17 @@ footer {
 
 
 /* CSS for thumbnails and concept images START here */
-#row img {
+.thumbnail {
+	width: 450px;
+	height: auto;
 	transition: transform 0.1s linear;
 }
 
-#thumbnail {
-	width: 450px;
-	height: auto;
-}
-
-a:hover #thumbnail {
+a:hover .thumbnail {
 	transform: scale(1.044);
 }
 
-#thumbnail-overlay {
+.thumbnail-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -482,14 +546,14 @@ a:hover #thumbnail {
 	width: 100%;
 	height: 100%;
     opacity: 0%;
-	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.01)); */
+	/* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.01)); */
 	/* background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01)); */
 	/* background-image: linear-gradient(to top, rgba(163, 198, 208, 0.3), rgba(163, 198, 208, 0.01)); */
 
 	transition: opacity 0.1s linear;
 }
 
-a:hover #thumbnail-overlay {
+a:hover .thumbnail-overlay {
 	opacity: 100%;
 }
 
@@ -512,8 +576,6 @@ a:hover #thumbnail-overlay {
 	float: left;
 	width: 450px;
 	height: 450px;
-
-	line-height: 30px;
 	/* background-color: pink; */
 }
 
@@ -545,8 +607,6 @@ a:hover #thumbnail-overlay {
 .section-title h2 {
 	position: relative;
 	top: 50%;
-
-	font-size: 24px;
 	text-align: center;
 }
 
@@ -569,6 +629,7 @@ a:hover #thumbnail-overlay {
 .download-link img {
 	width: auto;
 	height: 35px;
+	transition: transform 0.1s linear;
 }
 
 .social-link {
@@ -582,6 +643,7 @@ a:hover #thumbnail-overlay {
 .social-link img {
 	width: auto;
 	height: 45px;
+	transition: transform 0.1s linear;
 }
 
 a:hover #icon-link {
@@ -590,39 +652,6 @@ a:hover #icon-link {
 /* CSS for about me page ENDS here */
 
 
-
-
-
-
-/* CSS for fonts in resume page STARTS here */
-.resume-section, #resume-summary {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	color: white;
-}
-
-#resume-name, #resume-summary, #resume-download-hyperlink {
-	font-size: large;
-}
-
-#resume-title, #resume-email, .software-name {
-	font-size: medium;
-}
-
-#resume-location, .skill-tag {
-	font-size: small;
-}
-
-#resume-name {
-	letter-spacing: 9px;
-	font-weight: bold;
-}
-
-.resume-section h2 {
-	font-size: 30px;
-	font-weight: bold; /* 800 */
-}
-/* CSS for fonts in resume page ENDS here */
 
 
 
@@ -637,8 +666,19 @@ a:hover #icon-link {
 	margin: 0px 20px;
 	padding: 50px 0px 50px 0px;
 
-	border-bottom: 1px solid white ;
+	border-bottom: 1px solid white;
 	/* background-color: orange; */
+}
+
+.resume-section:first-child {
+	padding-top: 0px;
+	margin-top: 80px;
+}
+
+.resume-section:last-child {
+	padding-bottom: 0px;
+	margin-bottom: 80px;
+	border-bottom: none;
 }
 
 .resume-section h2 {
@@ -648,13 +688,93 @@ a:hover #icon-link {
 	/* background-color: blue; */
 }
 
+#resume-intro {
+	display: inline-block;
+
+	/* background-image: url("../images/backgrounds/bg_abstractblack.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	padding: 20px 0px;
+	border: thick solid white;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3); */
+
+	/* background-color: black; */
+}
+
+/* the parent element that holds #resume-headshot */
+#resume-intro .resume-intro-row:first-child { 
+	margin-top: 0px;
+}
+
+/* the parent element that holds #resume-name */
+#resume-intro .resume-intro-row:nth-child(2) {
+	margin-top: 20px;
+}
+
+/* the parent element that holds #resume-email */
+#resume-intro .resume-intro-row:nth-child(5) {
+	margin: 20px 0px 12px 0px;
+	/* margin: 20px 0px 10px 0px; */
+}
+
+.resume-intro-row {
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	margin-top: 10px;
+	/* background-color: orange; */
+}
+
+#resume-headshot {
+	float: left;
+	height: auto;
+	width: 160px;
+	/* background-color: blue; */
+}
+
+#resume-name, #resume-position, #resume-location, #resume-email {
+	float: left;
+	display: block;
+	padding: 12px 0px;
+	/* background-color: blue; */
+}
+
+#resume-location-icon {
+	float: left;
+	width: auto;
+	height: 15px;
+	margin-right: 6px;
+	margin-bottom: 1px;
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(102%) contrast(105%);
+	/* background-color: white; */
+}
+
+.resume-social-link {
+	float: left;
+	margin: auto 10px;
+	/* background-color: blue; */
+}
+
+.resume-social-link img {
+	width: auto;
+	height: 34px;
+	transition: transform 0.1s linear;
+}
+
+.resume-social-link img:hover {
+	transform: scale(1.066);
+}
+
 #resume-summary {
 	float: left;
 	width: auto;
 	height: auto;
-
-	font-size: large;
-	line-height: normal;
 	/* background-color: black; */
 }
 
@@ -669,7 +789,7 @@ a:hover #icon-link {
 	padding: 20px 20px;
 	margin: 0px 10px 20px 10px;
 
-	border: 3px solid white;
+	border: 2px solid white;
 	border-radius: 6px;
 	/* background-color: blue; */
 }
@@ -691,8 +811,8 @@ a:hover #icon-link {
 .software-icon {
 	flex: none;
 	float: left;
-	width: 40px;
-	height: 40px;
+	width: 34px;
+	height: 34px;
 
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(102%) contrast(105%);
 	/* background-color: white; */
@@ -703,7 +823,7 @@ a:hover #icon-link {
     float: left;
 	
 	padding: 20px 0px;
-	margin-left: 20px;
+	margin-left: 17px;
 	/* background-color: blue; */
 }
 
@@ -724,96 +844,19 @@ a:hover #icon-link {
 #resume-download-hyperlink {
 	flex: none;
 	float: left;
-	padding: 17.5px 0px;
+	padding: 10px 0px;
 	/* background-color: blue; */
 }
 
 #resume-download-icon {
 	width: auto;
-	height: 20px;
+	height: 24px;
+	transition: transform 0.1s linear;
 }
 
 #resume-download-icon:hover {
 	transform: scale(1.066);
 }
-
-
-
-
-
-
-
-
-#resume-intro {
-	display: inline-block;
-	/* background-color: black; */
-}
-
-/* the parent element that holds #resume-headshot */
-#resume-intro div:first-child {
-	margin-top: 0px;
-}
-
-/* the parent element that holds #resume-email */
-#resume-intro div:nth-child(5) {
-	margin: 20px 0px 10px 0px;
-}
-
-.resume-intro-row {
-	float: left;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	width: 100%;
-	margin-top: 10px;
-	/* background-color: orange; */
-}
-
-#resume-headshot {
-	float: left;
-	height: auto;
-	width: 150px;
-	/* background-color: blue; */
-}
-
-#resume-name, #resume-title, #resume-location, #resume-email {
-	float: left;
-	display: block;
-	padding: 10px 0px;
-	/* background-color: blue; */
-}
-
-#resume-location-icon {
-	float: left;
-	width: auto;
-	height: 15px;
-	margin-right: 6px;
-	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(108deg) brightness(102%) contrast(105%);
-	/* background-color: white; */
-}
-
-.resume-social-link {
-	float: left;
-	margin: auto 10px;
-	/* background-color: blue; */
-}
-
-.resume-social-link img {
-	width: auto;
-	height: 30px;
-}
-
-.resume-social-link img:hover {
-	transform: scale(1.066);
-}
-
-
-
-
-
-
-
 
 .resume-section #contact {
 	margin: 0px;
