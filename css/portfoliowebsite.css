@@ -557,7 +557,7 @@ a:hover .thumbnail-overlay {
 	opacity: 100%;
 }
 
-#concept, #highlight-image {
+.concept-image, .highlight-image {
 	width: 940px;
 	height: auto;
 }
@@ -646,7 +646,7 @@ a:hover .thumbnail-overlay {
 	transition: transform 0.1s linear;
 }
 
-a:hover #icon-link {
+a:hover .icon-link {
 	transform: scale(1.066);
 }
 /* CSS for about me page ENDS here */
@@ -860,6 +860,11 @@ a:hover #icon-link {
 
 .resume-section #contact {
 	margin: 0px;
+	padding: 0px;
+
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
 }
 
 
