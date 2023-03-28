@@ -135,7 +135,7 @@ a:link, a:visited, a:active {
 
 
 /* CSS for fonts in resume page START here */
-.resume-section h2 {
+.resume-section h2, .game-section h2 {
 	font-size: xx-large;
 	font-weight: bold; /* 800 */
 }
@@ -162,7 +162,7 @@ a:link, a:visited, a:active {
 	font-size: medium;
 }
 
-#resume-summary {
+#resume-summary, #game-summary {
 	font-size: medium;
 	line-height: 30px;
 }
@@ -867,6 +867,82 @@ a:hover .icon-link {
 	overflow: hidden;
 }
 
+
+
+
+
+
+
+/* ref */ 
+.webpage-title h1 {
+	float: left;
+	text-align: center;
+
+	width: 100%;
+	padding: 20px 0px;
+	margin-bottom: 40px;
+	/* background-color: orange; */
+}
+
+/* CSS for the game webpages STARTS here */
+.game-section {
+	float: left;
+	height: auto;
+	width: 940px;
+
+	margin: 0px 20px;
+	padding: 50px 0px 50px 0px;
+
+	border-bottom: 1px solid white;
+	/* background-color: orange; */
+}
+
+.game-section:nth-child(3) {
+	padding-top: 0px;
+	margin-top: 20px;
+}
+
+.game-section:last-child {
+	padding-bottom: 0px;
+	margin-bottom: 80px;
+	border-bottom: none;
+}
+
+.game-section iframe {
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+
+.game-section h2 {
+	padding: 30px 0px;
+	text-align: left;
+	margin-bottom: 20px;
+	/* background-color: blue; */
+}
+
+#game-summary {
+	float: left;
+	width: auto;
+	height: auto;
+	/* background-color: black; */
+}
+
+#game-skills-list {
+	float: left;
+	margin: 0px 0px -20px -10px;
+	/* background-color: black; */
+}
+
+/* .skill-tag {
+	float: left;
+	padding: 20px 20px;
+	margin: 0px 10px 20px 10px;
+
+	border: 2px solid white;
+	border-radius: 6px;
+} */
+/* CSS for the game webpages ENDS here */
 
 
 
