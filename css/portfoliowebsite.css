@@ -653,10 +653,6 @@ a:hover .icon-link {
 
 
 
-
-
-
-
 /* CSS for "Resume" page STARTS here */
 .resume-section {
 	float: left;
@@ -833,7 +829,7 @@ a:hover .icon-link {
 	/* background-color: black; */
 }
 
-/* the parent element that holds the #resume-download-icon */
+/* the last <a> tag within the class */
 .resume-download a:last-child {
 	flex: none;
 	float: left;
@@ -848,16 +844,6 @@ a:hover .icon-link {
 	/* background-color: blue; */
 }
 
-#resume-download-icon {
-	width: auto;
-	height: 24px;
-	transition: transform 0.1s linear;
-}
-
-#resume-download-icon:hover {
-	transform: scale(1.066);
-}
-
 .resume-section #contact {
 	margin: 0px;
 	padding: 0px;
@@ -868,21 +854,6 @@ a:hover .icon-link {
 }
 
 
-
-
-
-
-
-/* ref */ 
-.webpage-title h1 {
-	float: left;
-	text-align: center;
-
-	width: 100%;
-	padding: 20px 0px;
-	margin-bottom: 40px;
-	/* background-color: orange; */
-}
 
 /* CSS for the game webpages STARTS here */
 .game-section {
@@ -932,6 +903,57 @@ a:hover .icon-link {
 	float: left;
 	margin: 0px 0px -20px -10px;
 	/* background-color: black; */
+}
+
+.game-download {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	/* background-color: black; */
+}
+
+/* the second <a> tag within the class */
+.game-download a:nth-child(2) {
+	flex: none;
+	float: left;
+	/* background-color: blue; */
+}
+
+#game-download-hyperlink {
+	flex: none;
+	float: left;
+	padding: 10px 0px;
+	/* background-color: blue; */
+}
+
+.game-download-info {
+	float: left;
+	display: flex;
+	align-items: center;
+	/* margin-left: -10px; */
+	/* background-color: orange; */
+}
+
+.game-download-info img {
+	flex: none;
+	float: left;
+	margin-left: 10px;
+	/* background-color: blue; */
+}
+
+#windows-icon {
+	width: auto;
+	height: 18px;
+}
+
+#download-icon {
+	width: auto;
+	height: 24px;
+	transition: transform 0.1s linear;
+}
+
+#download-icon:hover {
+	transform: scale(1.066);
 }
 
 /* .skill-tag {
